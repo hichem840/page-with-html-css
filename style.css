@@ -1,18 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
-* {
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Dancing Script", cursive;
+body {
+  overflow-x: hidden;
+  font-family: 'Advent Pro', sans-serif;
+  width: 100%;
+}
+
+h1{
+  font-family: 'Dancing Script', cursive;
   position: relative;
   text-align: center;
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
+  color: rgb(245, 245, 220);
+  font-size: 3.2rem;
   transform: translateY(80px);
+  text-shadow: 1.3px 2px 0.5px black;
 }
 
 h2 {
@@ -22,9 +29,10 @@ h2 {
 }
 
 h3 {
+  font-family: 'Advent Pro', sans-serif;
   text-align: center;
-  color: white;
-  text-transform: uppercase;
+  color: beige;
+  font-size: 1.4rem;
   transform: translateY(150px);
 }
 p {
@@ -44,6 +52,7 @@ nav {
   background-color: rgb(245, 245, 220);
   height: 40px;
   width: 100%;
+  z-index: 100;
 }
 nav div span {
   font-family: "Dancing Script", cursive;
@@ -71,10 +80,7 @@ nav ul li a {
   cursor: pointer;
 }
 
-body {
-  font-family: "Advent Pro", sans-serif;
-  width: 100%;
-}
+
 .partie2 {
   height: 100vh;
   width: 100%;
@@ -91,11 +97,16 @@ body {
   margin: 70px 70px 0 70px;
   list-style: none;
 }
+img:hover {
+  transform :scale(1.1);
+}
+
 img {
   height: 200px;
   transform: translateY(-10px);
   border-radius: 10px;
   box-shadow: 7px 4px 10px black;
+  transition: 0.2s;
 }
 h4 {
   font-family: cursive;
@@ -219,4 +230,8 @@ textarea {
 img :hover {
   opacity: 0.5;
   transform: scale(1.7);
+}
+nav ul li a:hover {
+color: white;
+font-size: 1rem;
 }
